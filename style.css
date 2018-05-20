@@ -1,0 +1,84 @@
+.header img {
+  float: left;
+  width: 50px;
+  height: 50px;
+  background: #555;
+}
+
+.header h1 {
+  position: relative;
+  text-align : center;
+  margin: auto;
+  top: 18px;
+  font-size : 20px;
+  padding-bottom : 50px;
+}
+
+
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+  input[type=text] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  color : grey;
+  background: white;
+}
+
+input[type=text]:focus {
+  border: solid 1px black;  
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+input[type=submit] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+  opacity:0.8;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+  background-color: #F5F4F5;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for small screens */
+@media screen and (max-width: 700px) {
+	
+	h2,p,input[type=text]{
+	text-align :center;
+	}
+	
+	label {display: none;}
+	
+  input[type=submit] {
+    width: 100%;
+  }
+}

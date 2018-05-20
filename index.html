@@ -17,14 +17,30 @@
 	Collects users details add subscribes to newsletter
  -->
 <body>
+
+	<div class="header">
+		<img src="logo.png" alt="logo" />
+		<h1>Local IT Man</h1>
+	</div>
+	
+   <div class="container">
 	<form action="/action_page.php">
-		<h2>Sign Up for a free Local IT Man newsletter</h2>
-		<h5>First Name : </h5>
-		<input type="text" name="First Name" value="Mickey">
-		<h5>Last Name</h5>
-		<input type="text" name="Last Name" value="Mouse">
+		<h2>Local IT Man - News</h2>
+		
+		<p>This form is for demonstraion.</p>
+		<label for="firstname"><b>First Name : </b></label>
+		<input type="text" onfocus="this.value=''" name="firstname" value="First Name">
+		
+		<label for="lastname"><b>Last Name : </b></label>		
+		<input type="text" onfocus="this.value=''" name="lastname" value="Last Name">
+		
+		<label for="email"><b>Email</b></label>
+		<input type="text" onfocus="this.value=''" value="Enter Email" name="email" required>
+		
+		
 		<input type="submit" value="Submit">
 	</form> 
+   </div>
 </body>
 
 </html>
